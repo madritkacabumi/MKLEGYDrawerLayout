@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E09AE5A1F2B69460018D2D0 /* DoubleSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09AE551F2B69460018D2D0 /* DoubleSideMenu.swift */; };
+		2E09AE5B1F2B69460018D2D0 /* LEGYDrawerLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E09AE571F2B69460018D2D0 /* LEGYDrawerLayout.h */; };
+		2E09AE5C1F2B69460018D2D0 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E09AE591F2B69460018D2D0 /* extension.swift */; };
 		313B1CD3630BB2DB9C80F31A2B7FA101 /* MKLEGYDrawerLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F262B8D1A8136FC4C75F35091AF4B8 /* MKLEGYDrawerLayout-dummy.m */; };
 		644830360362C4B3D55D73A825BF3B53 /* Pods-MKLEGYDrawerLayout_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4544439887E024563E4239E908204A10 /* Pods-MKLEGYDrawerLayout_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		677DA77F4BCE204AF2CFAFDB260C8E59 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089D62642E090655EEC4E616B2878E8A /* ReplaceMe.swift */; };
 		6D8A0E8A3129E816ED61E361A7C24A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		7173A818DD0638660B1164B0C3C57CCF /* MKLEGYDrawerLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC86FFAA667978F13F36C3395796C04 /* MKLEGYDrawerLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		82B4549DCE278E40B332E8987793B533 /* Pods-MKLEGYDrawerLayout_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4908B1D44CD7068BD0E26096B543127 /* Pods-MKLEGYDrawerLayout_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,35 +32,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		089D62642E090655EEC4E616B2878E8A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		14FD7D05C84FCCAB4D6CC9A82C52FE3F /* Pods-MKLEGYDrawerLayout_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKLEGYDrawerLayout_Tests-dummy.m"; sourceTree = "<group>"; };
 		21F67B61810852D19B0DD9A21D061BA5 /* MKLEGYDrawerLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKLEGYDrawerLayout.xcconfig; sourceTree = "<group>"; };
+		2E09AE551F2B69460018D2D0 /* DoubleSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleSideMenu.swift; sourceTree = "<group>"; };
+		2E09AE561F2B69460018D2D0 /* DoubleSideMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoubleSideMenu.xib; sourceTree = "<group>"; };
+		2E09AE571F2B69460018D2D0 /* LEGYDrawerLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEGYDrawerLayout.h; sourceTree = "<group>"; };
+		2E09AE591F2B69460018D2D0 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		4544439887E024563E4239E908204A10 /* Pods-MKLEGYDrawerLayout_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKLEGYDrawerLayout_Example-umbrella.h"; sourceTree = "<group>"; };
-		4ADB7D14B096062E60485367FB2EFD21 /* Pods-MKLEGYDrawerLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MKLEGYDrawerLayout_Tests.modulemap"; sourceTree = "<group>"; };
+		4ADB7D14B096062E60485367FB2EFD21 /* Pods-MKLEGYDrawerLayout_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MKLEGYDrawerLayout_Tests.modulemap"; sourceTree = "<group>"; };
 		4B0404E531EBA5741A19677E9BB3E22B /* Pods-MKLEGYDrawerLayout_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKLEGYDrawerLayout_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5E98FECFCB0624C7E379CB1860587128 /* Pods-MKLEGYDrawerLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKLEGYDrawerLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6117FA9C3EBF6888AA39E4E0B234A81D /* Pods-MKLEGYDrawerLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKLEGYDrawerLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6944BD98B885DE827A10CEC8765D958F /* MKLEGYDrawerLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MKLEGYDrawerLayout.modulemap; sourceTree = "<group>"; };
+		6944BD98B885DE827A10CEC8765D958F /* MKLEGYDrawerLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MKLEGYDrawerLayout.modulemap; sourceTree = "<group>"; };
 		6E2B56D27CD7551BEC592AD5EF3FE6B7 /* Pods-MKLEGYDrawerLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKLEGYDrawerLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		768505A8BF4A380FD48519B65CE752A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F4F95EAEAD4E4FD3AAB4C9487D2419E /* Pods_MKLEGYDrawerLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKLEGYDrawerLayout_Example.framework; path = "Pods-MKLEGYDrawerLayout_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FD53FC91B37CAB1ED74E9EC24B0751D /* MKLEGYDrawerLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKLEGYDrawerLayout.framework; path = MKLEGYDrawerLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4F95EAEAD4E4FD3AAB4C9487D2419E /* Pods_MKLEGYDrawerLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKLEGYDrawerLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD53FC91B37CAB1ED74E9EC24B0751D /* MKLEGYDrawerLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKLEGYDrawerLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		878CFD4CC2B74A16CBD548A9EFA980F6 /* Pods-MKLEGYDrawerLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKLEGYDrawerLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		8CD4D276FED55D3647E8954FA6882A53 /* Pods-MKLEGYDrawerLayout_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKLEGYDrawerLayout_Example-dummy.m"; sourceTree = "<group>"; };
 		8E14C0CA076AF7A434893CF8517B2465 /* Pods-MKLEGYDrawerLayout_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKLEGYDrawerLayout_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96D29CA68A17C92BF9FBADA7651124D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4908B1D44CD7068BD0E26096B543127 /* Pods-MKLEGYDrawerLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKLEGYDrawerLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AC404953D5B31610B9CB8FC7AA650627 /* Pods-MKLEGYDrawerLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKLEGYDrawerLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		BDA283809CA915CD3FE8BCD18CA20D3A /* Pods-MKLEGYDrawerLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MKLEGYDrawerLayout_Example.modulemap"; sourceTree = "<group>"; };
+		BDA283809CA915CD3FE8BCD18CA20D3A /* Pods-MKLEGYDrawerLayout_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MKLEGYDrawerLayout_Example.modulemap"; sourceTree = "<group>"; };
 		BE592ACAE126E5B9DB11B3C6353748CB /* Pods-MKLEGYDrawerLayout_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKLEGYDrawerLayout_Example-resources.sh"; sourceTree = "<group>"; };
 		C6F262B8D1A8136FC4C75F35091AF4B8 /* MKLEGYDrawerLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKLEGYDrawerLayout-dummy.m"; sourceTree = "<group>"; };
 		CCE2A41D650E47630F941D874D31816F /* MKLEGYDrawerLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKLEGYDrawerLayout-prefix.pch"; sourceTree = "<group>"; };
 		DAC86FFAA667978F13F36C3395796C04 /* MKLEGYDrawerLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKLEGYDrawerLayout-umbrella.h"; sourceTree = "<group>"; };
 		DFCEA79399E8C433DF7EA2B7F280E850 /* Pods-MKLEGYDrawerLayout_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKLEGYDrawerLayout_Tests-resources.sh"; sourceTree = "<group>"; };
 		E8DA775245D56097536AE3BAF51DA71C /* Pods-MKLEGYDrawerLayout_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKLEGYDrawerLayout_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EB3535A29913AF6B83898FB6DBE43C8F /* Pods_MKLEGYDrawerLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKLEGYDrawerLayout_Tests.framework; path = "Pods-MKLEGYDrawerLayout_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB3535A29913AF6B83898FB6DBE43C8F /* Pods_MKLEGYDrawerLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKLEGYDrawerLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC58AE41DD84E4FD2B184A29DD2DEC6 /* Pods-MKLEGYDrawerLayout_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKLEGYDrawerLayout_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F9851D6E75AE1414B7043238AAA75E07 /* Pods-MKLEGYDrawerLayout_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKLEGYDrawerLayout_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FCEB77AB142D83CF8A7A0036FB0C7A69 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +166,6 @@
 			children = (
 				AD04D079696A087594A3433019828E17 /* Classes */,
 			);
-			name = MKLEGYDrawerLayout;
 			path = MKLEGYDrawerLayout;
 			sourceTree = "<group>";
 		};
@@ -202,9 +206,11 @@
 		AD04D079696A087594A3433019828E17 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				089D62642E090655EEC4E616B2878E8A /* ReplaceMe.swift */,
+				2E09AE551F2B69460018D2D0 /* DoubleSideMenu.swift */,
+				2E09AE561F2B69460018D2D0 /* DoubleSideMenu.xib */,
+				2E09AE571F2B69460018D2D0 /* LEGYDrawerLayout.h */,
+				2E09AE591F2B69460018D2D0 /* extension.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -247,6 +253,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E09AE5B1F2B69460018D2D0 /* LEGYDrawerLayout.h in Headers */,
 				7173A818DD0638660B1164B0C3C57CCF /* MKLEGYDrawerLayout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				313B1CD3630BB2DB9C80F31A2B7FA101 /* MKLEGYDrawerLayout-dummy.m in Sources */,
-				677DA77F4BCE204AF2CFAFDB260C8E59 /* ReplaceMe.swift in Sources */,
+				2E09AE5A1F2B69460018D2D0 /* DoubleSideMenu.swift in Sources */,
+				2E09AE5C1F2B69460018D2D0 /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

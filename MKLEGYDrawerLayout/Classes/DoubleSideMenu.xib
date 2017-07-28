@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DoubleSideMenu" customModule="LEGYDrawerLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9g-j1-R0c" userLabel="mainView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <gestureRecognizers/>
+                </view>
+                <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVO-yW-WlE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="menuDImCLicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="wwg-Vd-q7k"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98J-g0-TRX" userLabel="RightSideMenu">
+                    <rect key="frame" x="375" y="0.0" width="280" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="TKS-GX-LWA"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SB9-hW-6Ne" userLabel="LeftSIdeMenu">
+                    <rect key="frame" x="-280" y="0.0" width="280" height="667"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="elV-gl-esO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="98J-g0-TRX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6tU-xk-ifE"/>
+                <constraint firstItem="gVO-yW-WlE" firstAttribute="leading" secondItem="SB9-hW-6Ne" secondAttribute="trailing" id="7z5-v5-zAG"/>
+                <constraint firstItem="98J-g0-TRX" firstAttribute="leading" secondItem="gVO-yW-WlE" secondAttribute="trailing" id="AhL-BB-3AN"/>
+                <constraint firstAttribute="trailing" secondItem="j9g-j1-R0c" secondAttribute="trailing" id="LRe-eR-H9U"/>
+                <constraint firstAttribute="bottom" secondItem="j9g-j1-R0c" secondAttribute="bottom" id="M3N-a8-785"/>
+                <constraint firstItem="SB9-hW-6Ne" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NeM-Go-n3M"/>
+                <constraint firstAttribute="trailing" secondItem="98J-g0-TRX" secondAttribute="trailing" constant="-280" id="VtX-Op-ie3"/>
+                <constraint firstItem="gVO-yW-WlE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bGx-lT-lkv"/>
+                <constraint firstItem="j9g-j1-R0c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="co1-e5-Y0q"/>
+                <constraint firstItem="j9g-j1-R0c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dty-IQ-vxa"/>
+                <constraint firstAttribute="bottom" secondItem="98J-g0-TRX" secondAttribute="bottom" id="hq4-9G-iy1"/>
+                <constraint firstItem="SB9-hW-6Ne" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-280" id="rJW-Wz-dgW"/>
+                <constraint firstAttribute="bottom" secondItem="SB9-hW-6Ne" secondAttribute="bottom" id="rXn-zA-y4e"/>
+                <constraint firstAttribute="bottom" secondItem="gVO-yW-WlE" secondAttribute="bottom" id="rbI-N0-hno"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="MAIN_CONTAINER" destination="j9g-j1-R0c" id="z77-9e-Cfk"/>
+                <outlet property="leftSideMenu" destination="SB9-hW-6Ne" id="WYd-Yi-gcf"/>
+                <outlet property="leftSideMenuConStr" destination="rJW-Wz-dgW" id="2c9-sR-t5p"/>
+                <outlet property="leftSideMenuWidthConstraint" destination="elV-gl-esO" id="qhC-R7-3Tm"/>
+                <outlet property="menuDim" destination="gVO-yW-WlE" id="nEh-iz-cue"/>
+                <outlet property="rightSIdeMenuConstraint" destination="VtX-Op-ie3" id="R2g-Cf-7NA"/>
+                <outlet property="rightSideMenu" destination="98J-g0-TRX" id="VGg-R7-K10"/>
+                <outlet property="rightSideMenuWidthConstraint" destination="TKS-GX-LWA" id="ooY-yB-xHk"/>
+                <outletCollection property="gestureRecognizers" destination="6py-cu-eh4" appends="YES" id="7C0-ya-RI8"/>
+            </connections>
+            <point key="canvasLocation" x="-21.5" y="9.5"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="6py-cu-eh4">
+            <connections>
+                <action selector="moveSideBar:" destination="iN0-l3-epB" id="Rj4-i7-pth"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>
