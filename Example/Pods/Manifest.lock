@@ -1,0 +1,16 @@
+PODS:
+  - MKLEGYDrawerLayout (0.1.0)
+
+DEPENDENCIES:
+  - MKLEGYDrawerLayout (from `../`)
+
+EXTERNAL SOURCES:
+  MKLEGYDrawerLayout:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MKLEGYDrawerLayout: 6148958c44c8956235fae6bf9f66da210d4de49d
+
+PODFILE CHECKSUM: b3a36faefa3e01e0f22330891264ad369c3cda1c
+
+COCOAPODS: 1.2.1

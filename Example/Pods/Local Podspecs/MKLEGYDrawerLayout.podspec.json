@@ -1,0 +1,22 @@
+{
+  "name": "MKLEGYDrawerLayout",
+  "version": "0.1.0",
+  "summary": "A short description of MKLEGYDrawerLayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/devMadrit/MKLEGYDrawerLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "devMadrit": "madrit.kacabumi@atis.al"
+  },
+  "source": {
+    "git": "https://github.com/devMadrit/MKLEGYDrawerLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MKLEGYDrawerLayout/Classes/**/*"
+}
