@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MKLEGYDrawerLayout'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'Android drawer layout for ios , just two sidemenus using panGesturesRecogniser'
 
 # This description is used to generate tags and improve search results.

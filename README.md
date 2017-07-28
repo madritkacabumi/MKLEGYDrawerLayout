@@ -10,7 +10,7 @@
 A Double side menu for iOS like android DrawerLayout , simple to use and customisable . Just download it and it is ready to use 
 everything is built using panGesture recogniser;
 
-![](legencylib.gif)
+![](http://i.imgur.com/rbD9tMG.gifv)
 
 ## Features
 
