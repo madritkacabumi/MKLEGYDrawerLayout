@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MKLEGYDrawerLayout_Example' do
+  pod 'MKLEGYDrawerLayout', :path => '../'
+
+  target 'MKLEGYDrawerLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
