@@ -32,10 +32,26 @@ extension UIView{
         // self.frame = view.bounds
         
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.topAnchor.constraint(equalTo: self.superview!.topAnchor).isActive = true
-        self.bottomAnchor.constraint(equalTo: self.superview!.bottomAnchor).isActive = true
-        self.leadingAnchor.constraint(equalTo: self.superview!.leadingAnchor, constant: 0).isActive = true
-        self.trailingAnchor.constraint(equalTo: self.superview!.trailingAnchor, constant: 0).isActive = true
+        if #available(iOS 9.0, *) {
+            self.topAnchor.constraint(equalTo: self.superview!.topAnchor).isActive = true
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 9.0, *) {
+            self.bottomAnchor.constraint(equalTo: self.superview!.bottomAnchor).isActive = true
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 9.0, *) {
+            self.leadingAnchor.constraint(equalTo: self.superview!.leadingAnchor, constant: 0).isActive = true
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 9.0, *) {
+            self.trailingAnchor.constraint(equalTo: self.superview!.trailingAnchor, constant: 0).isActive = true
+        } else {
+            // Fallback on earlier versions
+        }
         
         if(animated){
             UIView.animate(withDuration: 0.3, animations: {
