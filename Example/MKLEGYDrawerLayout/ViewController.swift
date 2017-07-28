@@ -7,11 +7,16 @@
 //
 
 import UIKit
-
+import MKLEGYDrawerLayout
 class ViewController: UIViewController {
 
+    var sideMenu : DoubleSideMenu?
     override func viewDidLoad() {
         super.viewDidLoad()
+        let bundle = Bundle(identifier: "org.cocoapods.MKLEGYDrawerLayout");
+        sideMenu = UIView.createView(attachTo: self.view, fromBundle: bundle)
+        sideMenu?.setLeftMenuWidth(width: 150)
+        sideMenu?.setMenuDimColor(colorHexString: "#5c5c5c")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
