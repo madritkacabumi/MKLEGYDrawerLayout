@@ -28,12 +28,12 @@ public class DoubleSideMenu : UIView{
     
     // menu checking
     
-    var leftSideBarIsOpen = false;
-    var rightSideBarIsOpen = false;
+    public var leftSideBarIsOpen = false;
+    public var rightSideBarIsOpen = false;
     
     
-    var leftMenuIsEnabled = true;
-    var rightMenuIsEnabled = true;
+    public var leftMenuIsEnabled = true;
+    public var rightMenuIsEnabled = true;
     
     // ------------------------ VIEWS ------------------------------------------------------------------------------
     // menus Constraint
@@ -93,6 +93,15 @@ public class DoubleSideMenu : UIView{
     
     public func disableLeftMenu(){
         self.leftMenuIsEnabled = false;
+    }
+    
+    // aditional func to enable if needed any side menus
+    public func enableRightMenu(){
+        self.rightMenuIsEnabled = true;
+    }
+    
+    public func enableLeftMenu(){
+        self.leftMenuIsEnabled = true;
     }
     
     // func to removeLeftMenusView

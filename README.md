@@ -31,44 +31,64 @@ pod "MKLEGYDrawerLayout"
 ```
 ## Usagge :
 1. import library
-`import MKLEGYDrawerLayout`
+```import MKLEGYDrawerLayout
+```
 2.Declare variable (better optional)
-`var sideMenu : DoubleSideMenu?`
+```
+ var sideMenu : DoubleSideMenu?
+```
  // by default menus are both enabled
 
-3.You need to create this as a view (steps for doing it in viewdidLoad)
+3.You need to create this as a view (steps for doing it in viewdidLoad) 
   1. declare bundle 
-  `let bundle = Bundle(identifier: "org.cocoapods.MKLEGYDrawerLayout")`
+  ```
+  // function avaible in extension in the library
+  let bundle = Bundle(identifier: "org.cocoapods.MKLEGYDrawerLayout")
+
+  ```
   2. create view 
-  ``
+
+  ```
+  // function avaible in extension in the library
   sideMenu = UIView.createView(attachTo: self.view, fromBundle: bundle) 
   // self.view for all the view controller container or into another view 
-  ``
-  3. add view into it now (create a xib or a view controller in the story board add it into the main container or side menus ( they are just views)
+
   ```
-     I   sideMenu.setMainContentView (view : UIView, animated : Bool = false)
+  3. add view into it now (create a xib or a view controller in the story board add it into the main container or side menus ( they are just views)
+
+  ```
+     I   sideMenu?.setMainContentView (view : UIView, animated : Bool = false)
      //no need to add constraints , they are automatically added
-     II   sideMenu.addLeftMenu(view : UIView, animated: Bool = false) 
-     III    sideMenu.addRightMenu(view : UIView, animated: Bool = false)
+     II   sideMenu?.addLeftMenu(view : UIView, animated: Bool = false) 
+     III    sideMenu?.addRightMenu(view : UIView, animated: Bool = false)
+
   ```
   4. ENJOY !
 
 ## Customisation :
 
 1. width by default is 280 , but you can change it for both of them
-  `sideMenu?.setLeftMenuWidth(width : CGFloat)`
-  `sideMenu?.setRightMenuWidth(width : CGFloat)`
+
+```
+  sideMenu?.setLeftMenuWidth(width : CGFloat)
+  sideMenu?.setRightMenuWidth(width : CGFloat)
   // do not use negative values as the will go back to default : 280
 
+```
  2. every time you open one of menus lets suppose the left one , the Main Cointainer will have a black color with alpha 0.3 (Dim), to change the color simply 
-   `sideMenu?.setMenuDimColor(colorHexString : "#BBBBBB")`
+
+   ```sideMenu?.setMenuDimColor(colorHexString : "#BBBBBB")
+   ```
 
  3. if you need to disable any menu and leave only one simply  
+
  ```
-    sideMenu?.disableRightMenu()
-    //  OR  
+     sideMenu?.disableRightMenu()
      sideMenu?.disableLeftMenu()
-    //  OR  both of them :D
+     // OR
+     sideMenu?.enableRightMenu()
+     sideMenu?.enableLeftMenu()
+
  ```
 
  4. if during app running you need to change content then 
@@ -79,28 +99,33 @@ pod "MKLEGYDrawerLayout"
      sideMenu?. clearRightMenu() 
      //OR 
      // both of them :D   and anything else again
-     ```
+
+ ```
 
  5. if you need to open or close programatically menus then 
- ```
+
+  ```
     sideMenu?.closeAllMenus()
     sideMenu?.closeRightSideMenu()
     sideMenu?.closeLeftSideMenu()
 
     -- to open them --
+
     sideMenu?.openLeftSideMenu()
     sideMenu?.openRightSideMenu()
 
-    ```
+  ```
 
   6. additional data only for check , NOTE : use only for  direct check NOT changing !!
+
   ```
      sideMenu?.leftSideBarIsOpen : Bool
      sideMenu?.rightSideBarIsOpen : Bool
 
      sideMenu?.leftMenuIsEnabled : Bool
      sideMenu?.rightMenuIsEnabled : Bool
-     ```
+
+  ```
 
 ## Author
 
